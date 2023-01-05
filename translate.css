@@ -114,15 +114,34 @@ body{
 }
 .container button{
   width: 100%;
-  padding: 14px;
-  outline: none;
-  border: none;
-  color: #fff;
+  padding: 14px;;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
   cursor: pointer;
   margin-top: 20px;
-  font-size: 17px;
-  border-radius: 5px;
-  background-color: #5372F0;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  background-color: #C5C6D0;
+  border-radius: 10px;
+  -o-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  color: white;
+  background-image: linear-gradient(to right,#bdc3c7   ,#2c3e50);  box-shadow: 0 5px 15px rgba(150, 97, 103, .4);
+  background-position: 100% 0;
+  -o-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
 }
 @media (max-width: 660px){
   .container{
@@ -151,4 +170,27 @@ body{
   .controls .exchange{
     font-size: 14px;
   }
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  background-color:#848884;
+  color: white;
+  text-align: center;
+}
+
+
+.footer-link{
+  text-decoration: none;
+  color: black;
+  
+}
+
+.line{
+  margin: 0 5px;
 }
